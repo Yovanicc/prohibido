@@ -1,0 +1,91 @@
+/* Importamos una fuente más estilizada desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Color de fondo más suave */
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra más suave y pronunciada */
+    width: 100%;
+    max-width: 450px; /* Ampliamos un poco el ancho máximo */
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Efecto de hover */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Eleva el contenedor al hacer hover */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    width: calc(100% - 24px); /* Ajustamos el ancho para que se vea bien con los padding */
+    margin-bottom: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #28a745; /* Cambio de color en foco */
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.2); /* Añadimos un efecto de sombra suave al enfocar */
+}
+
+button {
+    padding: 12px 18px;
+    background-color: #28a745;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+
+button:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 18px rgba(40, 167, 69, 0.6); /* Sombra más intensa al hacer hover */
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+#imagen img {
+    width: 100%;  
+    max-width: 700px;
+    height: auto;
+    max-height: 700px;
+    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más definida en la imagen */
+    transition: transform 0.3s ease;
+}
+
+#imagen img:hover {
+    transform: scale(1.05); /* Efecto de agrandar ligeramente la imagen al hacer hover */
+}
